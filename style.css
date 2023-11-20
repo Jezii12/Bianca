@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('https://www.freepik.com/free-photos-vectors/gradient-background');
+    background-image: url(https://www.freepik.com/free-photos-vectors/gradient-background);
 
     background-size: cover;
     background-position: center;
