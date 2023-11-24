@@ -11,7 +11,7 @@ body {
 }
 
 header, section, footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: #fff(253, 253, 253, 0.7); /* Semi-transparent black background */
 }
 
 .header-content, .section-content {
