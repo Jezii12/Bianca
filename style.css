@@ -12,7 +12,7 @@ body {
 
 header, section, footer {
     background-color: #fff;
-
+}
 .header-content, .section-content {
     max-width: 800px;
     margin: 0 auto;
