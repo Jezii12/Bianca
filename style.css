@@ -11,8 +11,7 @@ body {
 }
 
 header, section, footer {
-    background-color: #fff(253, 253, 253, 0.7); /* Semi-transparent black background */
-}
+    background-color: #fff;
 
 .header-content, .section-content {
     max-width: 800px;
