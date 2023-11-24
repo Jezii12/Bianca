@@ -7,11 +7,12 @@ body {
 
     background-size: cover;
     background-position: center;
-    color: #0000; /* Text color on the background */
+    color: #000; /* Text color on the background */
 }
 
 header, section, footer {
     background-color: #fff;
+    color: #000;
 }
 .header-content, .section-content {
     max-width: 800px;
