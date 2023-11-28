@@ -66,6 +66,7 @@ footer {
     margin:10em;
     background-color: #444;
     overflow: hidden;
+    position: relative;
 
 }
 
