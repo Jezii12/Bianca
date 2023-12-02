@@ -62,7 +62,7 @@ footer {
 }
 
 .tab-bar{
-    padding: 2em;
+    padding: 2em;   
     margin:10em;
     background-color: #444;
     overflow: hidden;
@@ -87,8 +87,8 @@ footer {
 }
 
 .tab-bar a.active {
-    background-color: #555;
-    color: white;
+    background-color: #fffbfb;
+    color: rgb(190, 212, 49)55, 255, 255);
 }
 
 #content-container {
