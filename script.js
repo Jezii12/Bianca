@@ -17,18 +17,32 @@ function loadContent(page) {
     fetch(page)
         .then(response => response.text())
         .then(html => {
-            // Remove existing header and tab-bar
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = html;
+            // Extract content from fetched HTML
+            const content = extractContent(html);
 
-            const contentContainer = document.getElementById('content-container');
-            contentContainer.innerHTML = '';
+            // Update content container with extracted content
+            document.getElementById('content-container').innerHTML = content;
 
-            // Append only the content (excluding header and tab-bar) to the content container
-            const mainContent = tempDiv.querySelector('#content-container');
-            if (mainContent) {
-                contentContainer.appendChild(mainContent);
-            }
+            // Update background and heading styling
+            applyCommonStyles();
         })
         .catch(error => console.error('Error loading content:', error));
+}
+
+function extractContent(html) {
+    // Use a temporary div to parse the fetched HTML and extract content
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    const mainContent = tempDiv.querySelector('#content-container');
+
+    return mainContent ? mainContent.innerHTML : '';
+}
+
+function applyCommonStyles() {
+    // Apply common styles, including background, to the body
+    const body = document.body;
+    body.style.backgroundImage = 'url("/bg.jpg")';
+    body.style.backgroundSize = 'cover';
+    body.style.backgroundPosition = 'center';
+    body.style.color = '#000';
 }
