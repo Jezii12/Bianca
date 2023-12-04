@@ -84,7 +84,115 @@ section.fade-in {
 .tab-bar a.active {
     background-color: #fffbfb;
     color: rgb(190, 212, 49);
+}body {
+    font-family: 'Roboto', sans-serif; /* Change to a more modern font like Roboto */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333; /* Darker text color for better readability */
 }
+
+header, section, footer {
+    background-color: #fff;
+    color: #333;
+    padding: 2em;
+    border-radius: 10px; /* Add rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.header-content, .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Increase header font size for emphasis */
+}
+
+header p {
+    margin: 0;
+    font-style: italic; /* Add italic style to the header paragraph */
+}
+
+section h2 {
+    color: #00bcd4;
+    font-size: 1.8em; /* Increase section heading font size */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+section.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid #ddd; /* Add a border at the top of the footer */
+}
+
+.tab-bar {
+    text-align: center;
+    padding: 2em;
+    margin: 2em 0;
+    background-color: #444;
+    overflow: hidden;
+    border-radius: 10px; /* Add rounded corners to the tab-bar */
+}
+
+.tab-bar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border-radius: 5px; /* Add rounded corners to the tab links */
+}
+
+.tab-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.tab-bar a.active {
+    background-color: #fffbfb;
+    color: rgb(190, 212, 49);
+}
+
+#content-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly increase opacity for better readability */
+}
+
 
 #content-container {
     padding: 20px;
