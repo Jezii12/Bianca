@@ -17,7 +17,18 @@ function loadContent(page) {
     fetch(page)
         .then(response => response.text())
         .then(html => {
-            document.getElementById('content-container').innerHTML = html;
+            // Remove existing header and tab-bar
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+
+            const contentContainer = document.getElementById('content-container');
+            contentContainer.innerHTML = '';
+
+            // Append only the content (excluding header and tab-bar) to the content container
+            const mainContent = tempDiv.querySelector('#content-container');
+            if (mainContent) {
+                contentContainer.appendChild(mainContent);
+            }
         })
         .catch(error => console.error('Error loading content:', error));
 }
