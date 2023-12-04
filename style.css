@@ -6,11 +6,12 @@ body {
     background-image: url('/bg.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Keep the background fixed */
-    color: #000; /* Text color on the background */
+    background-attachment: fixed;
+    color: #000;
+    margin-bottom: 60px; /* Adjust this value based on the footer's height */
 }
 
-header, section, footer {
+header, section {
     background-color: #fff;
     color: #000;
     padding: 2em;
@@ -26,7 +27,7 @@ header h1, header p {
 }
 
 section h2 {
-    color: #00bcd4; /* Accent color for section headings */
+    color: #00bcd4;
 }
 
 ul {
@@ -55,11 +56,6 @@ section.fade-in {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-footer {
-    text-align: center;
-    padding: 1em;
 }
 
 .tab-bar {
@@ -92,5 +88,15 @@ footer {
 
 #content-container {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Add a background color with opacity for content */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #444;
+    color: white;
 }
