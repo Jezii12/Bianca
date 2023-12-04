@@ -6,6 +6,7 @@ body {
     background-image: url('/bg.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Keep the background fixed */
     color: #000; /* Text color on the background */
 }
 
@@ -91,5 +92,5 @@ footer {
 
 #content-container {
     padding: 20px;
-    background-color: #fff; /* Add a background color for content */
+    background-color: rgba(255, 255, 255, 0.7); /* Add a background color with opacity for content */
 }
