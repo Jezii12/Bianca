@@ -11,6 +11,10 @@ body {
     margin-bottom: 60px; /* Adjust this value based on the footer's height */
 }
 
+title {
+    text-align:left;
+}
+
 header, section {
     background-color: #fff;
     color: #000;
