@@ -108,6 +108,15 @@ section.fade-in {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#content-container h2 a {
+    color: #333; /* Change this color to your desired color */
+    text-decoration: none; /* Remove underline from the links */
+}
+
+#content-container h2 a:hover {
+    color: #00bcd4; /* Change this color to your desired hover color */
+}
+
 footer {
     text-align: center;
     padding: 1em;
