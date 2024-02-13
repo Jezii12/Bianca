@@ -1,4 +1,5 @@
 var clickMeAgainClicked = false;
+var finalButtonClicked = false;
 
 function showClickMeAgain() {
     if (!clickMeAgainClicked) {
@@ -16,17 +17,33 @@ function showClickMeAgain() {
 }
 
 function showFinalButton() {
-    // Create "Now, Click Me" button
-    var finalButton = document.createElement("button");
-    finalButton.innerText = "Now, Click Me";
-    finalButton.id = "finalButton";
-    finalButton.onclick = showMessage;
+    if (!finalButtonClicked) {
+        finalButtonClicked = true;
 
-    // Append the button to the body
-    document.body.appendChild(finalButton);
+        // Create "Now, Click Me" button
+        var finalButton = document.createElement("button");
+        finalButton.innerText = "Now, Click Me";
+        finalButton.id = "finalButton";
+        finalButton.onclick = showMessage;
+
+        // Append the button to the body
+        document.body.appendChild(finalButton);
+    }
 }
 
 function showMessage() {
     // Display a message
     alert("Congratulations! You clicked all the buttons!");
 }
+
+$(document).ready(function () {
+    $('.container').mouseenter(function () {
+        $('.card').stop().animate({
+            top: '-90px'
+        }, 'slow');
+    }).mouseleave(function () {
+        $('.card').stop().animate({
+            top: 0
+        }, 'slow');
+    });
+});
