@@ -112,7 +112,7 @@ body {
   font-family: "Parisienne";
   border: 2px solid #f08080;
   border-radius: 10px;
-  justify-content: center;
+  text-align: justify;
   padding: 20px;
   width: 300px;
   position: absolute;
