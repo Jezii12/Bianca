@@ -79,6 +79,24 @@ body {
   color: #003049;
 }
 
+.primaryButton {
+  background: #f08080;
+  border: 2px solid #f08080;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Quicksand,sans-serif;
+  font-weight: 700;
+  height: 50px;
+  left: 40px;
+  margin-right: 40px;
+  padding: 7px 20px;
+  position: absolute;
+  top: 320px;
+  transition: background .3s,color .3s;
+  width: 200px;
+}
+
 .heart {
   background-color: #d62828;
   display: inline-block;
