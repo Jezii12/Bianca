@@ -11,68 +11,80 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #f7e9d1;
+      background: linear-gradient(135deg, #ff6b6b, #ff5757);
+      overflow: hidden;
     }
 
-    #heart-container {
+    #envelope-container {
       text-align: center;
+      position: relative;
+      z-index: 1;
     }
 
-    .heart {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      background-color: #ff5757;
-      transform: rotate(-45deg);
-      animation: heartbeat 1s infinite;
+    #envelope {
+      width: 200px;
+      height: 120px;
+      background-color: #fff;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
     }
 
-    .heart::before,
-    .heart::after {
+    #envelope::before {
       content: '';
-      display: block;
-      width: 50px;
-      height: 50px;
-      background-color: #ff5757;
-      border-radius: 50%;
       position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      background-color: #fff;
     }
 
-    .heart::before {
-      top: -25px;
-      left: 0;
+    #envelope::after {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      background-color: #fff;
     }
 
-    .heart::after {
-      top: 0;
-      left: -25px;
-    }
-
-    @keyframes heartbeat {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    #greeting {
+    #message {
       font-size: 24px;
       margin-top: 20px;
-      color: #333;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      display: none;
     }
   </style>
 </head>
 <body>
 
-<div id="heart-container">
-  <div class="heart"></div>
-  <div id="greeting">Happy Valentine's Day!</div>
+<div id="envelope-container">
+  <div id="envelope" onclick="revealMessage()">
+    <!-- You can add more decorative elements inside the envelope if needed -->
+  </div>
+  <div id="message">Happy Valentine's Day!</div>
 </div>
+
+<script>
+  function revealMessage() {
+    const envelope = document.getElementById('envelope');
+    const message = document.getElementById('message');
+
+    // Hide envelope and reveal message
+    envelope.style.transform = 'scale(0)';
+    message.style.display = 'block';
+  }
+</script>
 
 </body>
 </html>
