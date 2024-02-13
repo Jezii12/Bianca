@@ -69,12 +69,13 @@ body {
 
 .text {
   position: absolute;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Parisienne', cursive;
   font-size: 30px;
+  font-weight: 700;
   text-align: center;
-  line-height:27px;
+  line-height:25px;
   top:19px;
-  left:85px;
+  left:70px;
   color: #003049;
 }
 
