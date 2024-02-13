@@ -22,14 +22,14 @@
     }
 
     #envelope {
-      width: 250px;
-      height: 150px;
+      width: 300px;
+      height: 200px;
       background-color: #fff;
       border: 5px solid #c62828;
       border-radius: 10px;
       position: relative;
       cursor: pointer;
-      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
     }
 
     #envelope::before {
@@ -64,11 +64,13 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateX(-50%);
+      transform-origin: top;
       width: 120px;
       height: 30px;
       background-color: #c62828;
       border-radius: 0 0 10px 10px;
+      transform: rotate(0deg);
+      transition: transform 0.5s ease-in-out;
     }
 
     #message {
@@ -77,6 +79,10 @@
       color: #fff;
       font-family: 'Courier New', monospace;
       display: none;
+    }
+
+    #envelope.open #envelope-flap {
+      transform: rotate(110deg);
     }
   </style>
 </head>
@@ -95,9 +101,14 @@
     const envelope = document.getElementById('envelope');
     const message = document.getElementById('message');
 
-    // Hide envelope and reveal message
-    envelope.style.transform = 'scale(0)';
-    message.style.display = 'block';
+    // Open the envelope
+    envelope.classList.add('open');
+
+    // Hide envelope and reveal message after a delay
+    setTimeout(() => {
+      envelope.style.display = 'none';
+      message.style.display = 'block';
+    }, 500);
   }
 </script>
 
