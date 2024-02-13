@@ -51,9 +51,11 @@ body {
   background-color: #eae2b7;
   width: 270px;
   height: 170px;
-  top:5px;
-  left:15px;
-  box-shadow: -5px -5px 100px rgba(0,0,0,0.4); 
+  top: 5px;
+  left: 15px;
+  box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+  overflow: hidden; /* Ensure that the hearts are clipped inside the card */
+  z-index: 1; /* Ensure the card is above the hearts */
 }
 
 .card:before {
@@ -119,10 +121,10 @@ body {
   display: inline-block;
   height: 10px;
   margin: 0 10px;
-  position: relative;
+  position: absolute; /* Change from relative to absolute */
   transform: rotate(-45deg);
   width: 10px;
-  top:50px;
+  top: 50px;
 }
 
 .one:before,
@@ -146,27 +148,27 @@ body {
 }
   
 .one {
-  left:10px;
-  animation: heart 1s ease-out infinite; 
+  left: 10px;
+  animation: heart 1s ease-out infinite;
 }
 
 .two {
-  left:30px;
-  animation: heart 2s ease-out infinite; 
+  left: 30px;
+  animation: heart 2s ease-out infinite;
 }
 
 .three {
-  left:50px;
+  left: 50px;
   animation: heart 1.5s ease-out infinite;
 }
 
 .four {
-  left:70px;
+  left: 70px;
   animation: heart 2.3s ease-out infinite;
 }
 
 .five {
-  left:90px;
+  left: 90px;
   animation: heart 1.7s ease-out infinite;
 }
 
