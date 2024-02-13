@@ -22,9 +22,10 @@
     }
 
     #envelope {
-      width: 200px;
-      height: 120px;
+      width: 250px;
+      height: 150px;
       background-color: #fff;
+      border: 5px solid #c62828;
       border-radius: 10px;
       position: relative;
       cursor: pointer;
@@ -34,27 +35,40 @@
     #envelope::before {
       content: '';
       position: absolute;
-      top: 10px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       width: 40px;
       height: 40px;
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
+      border: 5px solid #c62828;
       background-color: #fff;
     }
 
     #envelope::after {
       content: '';
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
       width: 40px;
       height: 40px;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
+      border: 5px solid #c62828;
       background-color: #fff;
+    }
+
+    #envelope-flap {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 30px;
+      background-color: #c62828;
+      border-radius: 0 0 10px 10px;
     }
 
     #message {
@@ -70,6 +84,7 @@
 
 <div id="envelope-container">
   <div id="envelope" onclick="revealMessage()">
+    <div id="envelope-flap"></div>
     <!-- You can add more decorative elements inside the envelope if needed -->
   </div>
   <div id="message">Happy Valentine's Day!</div>
