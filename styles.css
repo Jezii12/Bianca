@@ -69,7 +69,7 @@ body {
 
 .text {
   position: absolute;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Brush Script MT', cursive;
   font-size: 28px;
   text-align: center;
   line-height:25px;
@@ -83,7 +83,7 @@ body {
   display: inline-block;
   height: 30px;
   margin: 0 10px;
-  position: absolute;
+  position: relative;
   top: 110px;
   left:105px;
   transform: rotate(-45deg);
@@ -172,7 +172,7 @@ body {
 
 @keyframes heart {
   0%{
-    transform: translateY(0px) rotate(-45deg) scale(0.3);
+    transform: translateY(0) rotate(-45deg) scale(0.3);
     opacity: 1;
   }
   100%{
