@@ -28,13 +28,33 @@ function showFinalButton() {
 
         // Append the button to the body
         document.body.appendChild(finalButton);
+
+        // Center the button at the bottom
+        finalButton.style.position = "fixed";
+        finalButton.style.bottom = "20px";
+        finalButton.style.left = "50%";
+        finalButton.style.transform = "translateX(-50%)";
     }
 }
 
 function showMessage() {
-    // Display a message
-    alert("Congratulations! You clicked all the buttons!");
+    // Create a pop-up message div
+    var popupMessage = document.createElement("div");
+    popupMessage.innerText = "Congratulations! You clicked all the buttons!";
+    popupMessage.id = "popupMessage";
+
+    // Append the message to the body
+    document.body.appendChild(popupMessage);
+
+    // Center the message
+    popupMessage.style.position = "fixed";
+    popupMessage.style.top = "50%";
+    popupMessage.style.left = "50%";
+    popupMessage.style.transform = "translate(-50%, -50%)";
 }
+
+// Call the initial function
+showClickMeAgain();
 
 $(document).ready(function () {
     $('.container').mouseenter(function () {
