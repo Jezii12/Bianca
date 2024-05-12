@@ -70,10 +70,10 @@ body {
 .text {
   position: absolute;
   font-family: 'Brush Script MT', cursive, Parisienne, cursive;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
-  line-height:24px;
+  line-height:20px;
   top:19px;
   left: 95px;
   color: #003049;
