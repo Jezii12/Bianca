@@ -75,7 +75,7 @@ body {
   text-align: center;
   line-height:25px;
   top:19px;
-  left: 96px;
+  left: 100px;
   color: #003049;
 }
 
@@ -150,7 +150,7 @@ body {
   margin: 0 10px;
   position: relative;
   top: 110px;
-  left:105px;
+  left:110px;
   transform: rotate(-45deg);
   width: 30px;
 }
