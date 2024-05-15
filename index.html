@@ -12,29 +12,6 @@
 </head>
 <body>
 
-  <style>
-  .top-left-button {
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  </style>
-
-  <button class="top-left-button" onclick="openModal2()">Click me when you're sad (｡ •́︿•̀｡ )</button>
-  <div id="myModal2" class="modal">
-    <div class="modal-content2">
-      <span class="close" onclick="closeModal2()">&times;</span>
-      <p>Hello, Iloveyou!</p>
-    </div>
-  </div>
-
- 
   <div class="container">  
     <div class="valentines">
       <div class="envelope"></div>
@@ -53,18 +30,50 @@
     </div>
     <div class="shadow"></div>
 
-    
-
     <button class="primaryButton" onclick="openModal()">Click Meeee</button>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <p>Hello, Tori! I created this webpage for you hehe. I just want to say na you're worth having around, you're worth committing to, you're worth appreciating, and you're worth loving. ♡</br>Iloveyou!</p>
-      </div>
+  </div>
+
+  <!-- Additional buttons -->
+  <button class="corner-button top-left-button" onclick="openModal2()">Top Left Button</button>
+  <button class="corner-button top-right-button" onclick="openModal3()">Top Right Button</button>
+  <button class="corner-button bottom-left-button" onclick="openModal4()">Bottom Left Button</button>
+  <button class="corner-button bottom-right-button" onclick="openModal5()">Bottom Right Button</button>
+
+  <!-- Modals -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>Hello, Tori! I created this webpage for you hehe. I just want to say na you're worth having around, you're worth committing to, you're worth appreciating, and you're worth loving. ♡</br>Iloveyou!</p>
     </div>
   </div>
 
- 
+  <div id="myModal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal2()">&times;</span>
+      <p>Hello, Tori! Remember to smile and keep your spirits high. You're amazing just the way you are!</p>
+    </div>
+  </div>
+
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal3()">&times;</span>
+      <p>Hey Tori, just know that even when you feel lonely, you are loved and cherished!</p>
+    </div>
+  </div>
+
+  <div id="myModal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal4()">&times;</span>
+      <p>Hi Tori! Find joy in the little things and remember, you bring joy to others just by being you!</p>
+    </div>
+  </div>
+
+  <div id="myModal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal5()">&times;</span>
+      <p>Hi Tori! Embrace the moments of calm and know that you are appreciated every day!</p>
+    </div>
+  </div>
 
 </body>
 </html>
