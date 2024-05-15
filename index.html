@@ -9,8 +9,26 @@
   <script src="jquery-3.4.1.min.js"></script>
   <title>Hello, Towi!</title>
   <link rel="icon" href="HappyValentines/heart.png" type="image/png">
+  <style>
+    .top-left-button {
+      position: absolute;
+      top: 10px; /* Adjust as needed */
+      left: 10px; /* Adjust as needed */
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .top-left-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
+
+  <button class="top-left-button" onclick="anotherFunction()">Top Left Button</button>
 
   <div class="container">  
     <div class="valentines">
@@ -37,15 +55,13 @@
         <p>Hello, Tori! I created this webpage for you hehe. I just want to say na you're worth having around, you're worth committing to, you're worth appreciating, and you're worth loving. ♡</br>Iloveyou!</p>
       </div>
     </div>
-
-    <button class="primaryButton" onclick="openModal2()">Click Meeee</button>
-    <div id="myModal2" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <p>Hello, Iloveyou!</p>
-      </div>
-    </div>
   </div>
+
+  <script>
+    function anotherFunction() {
+      alert('Top Left Button Clicked!');
+    }
+  </script>
 
 </body>
 </html>
