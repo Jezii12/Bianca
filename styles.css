@@ -343,14 +343,15 @@ body {
 }
 
 .corner-button {
-  position: absolute;
+  margin: 5px; /* Adjust margin between buttons as needed */
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #eae2b7;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
+
 
 .corner-button:hover {
   background-color: #0056b3;
