@@ -143,6 +143,21 @@ body {
   width: 100%;
 }
 
+.top-left-button {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.top-left-button:hover {
+  background-color: #0056b3;
+}
+
 .heart {
   background-color: #d62828;
   display: inline-block;
