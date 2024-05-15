@@ -24,3 +24,13 @@ function openModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
   }
+
+  function openModal3() {
+    var modal = document.getElementById("myModal3");
+    modal.style.display = "block";
+  }
+
+  function closeModal3() {
+    var modal = document.getElementById("myModal3");
+    modal.style.display = "none";
+  }

@@ -28,8 +28,14 @@
 </head>
 <body>
 
-  <button class="top-left-button" onclick="anotherFunction()">Top Left Button</button>
-
+  <button class="top-left-button" onclick="openModal3()">Click me when you're sad (｡ •́︿•̀｡ )</button>
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal3()">&times;</span>
+      <p>Hello, Iloveyou!</p>
+    </div>
+  </div>
+  
   <div class="container">  
     <div class="valentines">
       <div class="envelope"></div>
@@ -57,11 +63,7 @@
     </div>
   </div>
 
-  <script>
-    function anotherFunction() {
-      alert('Top Left Button Clicked!');
-    }
-  </script>
+ 
 
 </body>
 </html>
