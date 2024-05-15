@@ -10,6 +10,15 @@ body {
   position: relative;
 }
 
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+
 .valentines {
   position: relative;
   top:50px;
@@ -75,7 +84,7 @@ body {
   text-align: center;
   line-height:25px;
   top:19px;
-  left: 100px;
+  left: 103px;
   color: #003049;
 }
 
