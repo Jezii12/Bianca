@@ -13,69 +13,28 @@
 <body>
 
   <style>
-    .corner-button {
-      position: absolute;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .corner-button:hover {
-      background-color: #0056b3;
-    }
-    .top-left-button {
-      top: 10px;
-      left: 10px;
-    }
-    .top-right-button {
-      top: 10px;
-      right: 10px;
-    }
-    .bottom-left-button {
-      bottom: 10px;
-      left: 10px;
-    }
-    .bottom-right-button {
-      bottom: 10px;
-      right: 10px;
-    }
+  .top-left-button {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
   </style>
 
-  <button class="corner-button top-left-button" onclick="openModal()">Click me when you're sad (｡ •́︿•̀｡ )</button>
-  <button class="corner-button top-right-button" onclick="openModal2()">Click me when you're happy (｡ •́︿•̀｡ )</button>
-  <button class="corner-button bottom-left-button" onclick="openModal3()">Click me when you're lonely (｡ •́︿•̀｡ )</button>
-  <button class="corner-button bottom-right-button" onclick="openModal4()">Click me when you're bored (｡ •́︿•̀｡ )</button>
-
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <p>Hello, Tori! I created this webpage for you hehe. I just want to say na you're worth having around, you're worth committing to, you're worth appreciating, and you're worth loving. ♡</br>Iloveyou!</p>
-    </div>
-  </div>
-
+  <button class="top-left-button" onclick="openModal2()">Click me when you're sad (｡ •́︿•̀｡ )</button>
   <div id="myModal2" class="modal">
-    <div class="modal-content">
+    <div class="modal-content2">
       <span class="close" onclick="closeModal2()">&times;</span>
-      <p>Hello, Tori! Remember to smile and keep your spirits high. You're amazing just the way you are!</p>
+      <p>Hello, Iloveyou!</p>
     </div>
   </div>
 
-  <div id="myModal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal3()">&times;</span>
-      <p>Hey Tori, just know that even when you feel lonely, you are loved and cherished!</p>
-    </div>
-  </div>
-
-  <div id="myModal4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal4()">&times;</span>
-      <p>Hi Tori! Find joy in the little things and remember, you bring joy to others just by being you!</p>
-    </div>
-  </div>
-
+ 
   <div class="container">  
     <div class="valentines">
       <div class="envelope"></div>
@@ -94,7 +53,18 @@
     </div>
     <div class="shadow"></div>
 
+    
+
     <button class="primaryButton" onclick="openModal()">Click Meeee</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Hello, Tori! I created this webpage for you hehe. I just want to say na you're worth having around, you're worth committing to, you're worth appreciating, and you're worth loving. ♡</br>Iloveyou!</p>
+      </div>
+    </div>
   </div>
+
+ 
+
 </body>
 </html>
