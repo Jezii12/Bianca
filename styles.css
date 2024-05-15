@@ -121,6 +121,20 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.modal-content2 {
+  background: #fff;
+  font-family: "Parisienne";
+  border: 2px solid #f08080;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .close {
   color: #f08080;
   cursor: pointer;
@@ -143,17 +157,7 @@ body {
   width: 100%;
 }
 
-.top-left-button {
-  position: absolute;
-  top: 10px; /* Adjust as needed */
-  left: 10px; /* Adjust as needed */
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
+
 .top-left-button:hover {
   background-color: #0056b3;
 }
