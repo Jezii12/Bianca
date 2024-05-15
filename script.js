@@ -46,5 +46,16 @@ function openModal4() {
 }
 
 function closeModal4() {
-    var modal = document.get
+    var modal = document.getElementById("myModal4");
+    modal.style.display = "none";
+}
+
+function openModal5() {
+    var modal = document.getElementById("myModal5");
+    modal.style.display = "block";
+}
+
+function closeModal5() {
+    var modal = document.getElementById("myModal5");
+    modal.style.display = "none";
 }
