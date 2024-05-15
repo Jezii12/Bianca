@@ -13,24 +13,39 @@ $(document).ready(function () {
 function openModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
-  }
+}
 
-  function openModal2() {
-    var modal = document.getElementById("myModal2");
-    modal.style.display = "block";
-  }
-  
-  function closeModal() {
+function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
-  }
+}
 
-  function openModal3() {
+function openModal2() {
+    var modal = document.getElementById("myModal2");
+    modal.style.display = "block";
+}
+
+function closeModal2() {
+    var modal = document.getElementById("myModal2");
+    modal.style.display = "none";
+}
+
+function openModal3() {
     var modal = document.getElementById("myModal3");
     modal.style.display = "block";
-  }
+}
 
-  function closeModal3() {
+function closeModal3() {
     var modal = document.getElementById("myModal3");
     modal.style.display = "none";
-  }
+}
+
+function openModal4() {
+    var modal = document.getElementById("myModal4");
+    modal.style.display = "block";
+}
+
+function closeModal4() {
+    var modal = document.getElementById("myModal4");
+    modal.style.display = "none";
+}
