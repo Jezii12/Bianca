@@ -132,37 +132,6 @@ body {
 
 
 
-.top-left-button:nth-of-type(odd) {
-  top: 60px;
-}
-
-.top-left-button:nth-of-type(even) {
-  top: 110px;
-}
-
-.top-right-button:nth-of-type(odd) {
-  top: 60px;
-}
-
-.top-right-button:nth-of-type(even) {
-  top: 110px;
-}
-
-.bottom-left-button:nth-of-type(odd) {
-  bottom: 60px;
-}
-
-.bottom-left-button:nth-of-type(even) {
-  bottom: 110px;
-}
-
-.bottom-right-button:nth-of-type(odd) {
-  bottom: 60px;
-}
-
-.bottom-right-button:nth-of-type(even) {
-  bottom: 110px;
-}
 
 .modal-content2 {
   background: #fff;
