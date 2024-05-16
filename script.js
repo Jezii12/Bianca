@@ -169,3 +169,13 @@ function closeModal16() {
     var modal = document.getElementById("myModal16");
     modal.style.display = "none";
 }
+
+function openModal17() {
+    var modal = document.getElementById("myModal17");
+    modal.style.display = "block";
+}
+
+function closeModal17() {
+    var modal = document.getElementById("myModal17");
+    modal.style.display = "none";
+}
