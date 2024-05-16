@@ -336,28 +336,28 @@ body {
 .top-left-button1 {
   margin: 10px;
   position: absolute;
-  top: 20px;
+  top: 200px;
   left: 10px;
 }
 
 .top-right-button1 {
   margin: 10px;
   position: absolute;
-  top: 10px;
+  top: 100px;
   right: 10px;
 }
 
 .bottom-left-button1 {
   margin: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: 100px;
   left: 10px;
 }
 
 .bottom-right-button1 {
   margin: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: 100px;
   right: 10px;
 }
 
@@ -365,55 +365,55 @@ body {
   margin: 10px;
   position: absolute;
   top: 10px;
-  left: 20px;
+  left: 200px;
 }
 
 .top-right-button2 {
   margin: 10px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 100px;
 }
 
 .bottom-left-button2 {
   margin: 10px;
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 100px;
 }
 
 .bottom-right-button2 {
   margin: 10px;
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 100px;
 }
 
 .top-left-button3 {
   margin: 10px;
   position: absolute;
-  top: 30px;
+  top: 100px;
   left: 10px;
 }
 
 .top-right-button3 {
   margin: 10px;
   position: absolute;
-  top: 10px;
+  top: 200px;
   right: 10px;
 }
 
 .bottom-left-button3 {
   margin: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: 200px;
   left: 10px;
 }
 
 .bottom-right-button3 {
   margin: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: 200px;
   right: 10px;
 }
 
@@ -421,20 +421,20 @@ body {
   margin: 10px;
   position: absolute;
   top: 10px;
-  left: 30px;
+  left: 100px;
 }
 
 .top-right-button4 {
   margin: 10px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 200px;
 }
 
 .bottom-left-button4 {
   margin: 10px;
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 200px;
 }
 
